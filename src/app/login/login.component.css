@@ -1,0 +1,12 @@
+.login{
+    height: 76.8vh;
+}
+
+.formulog{
+    margin-top:15%;
+    border: 1px solid #000000;
+    border-radius: 1;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    padding: 10px;
+}

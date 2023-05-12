@@ -1,0 +1,7 @@
+<!-- Redes -->
+<div class=" my-3 Redes-container">
+    <h4>Redes</h4>
+    <div class="my-3 soft-1 grupo-info" *ngFor="let red of redes">
+        <app-redes-form (onSaveRedes)="saveRedesChanges($event)"  [redes]="red"></app-redes-form>
+    </div>
+</div>

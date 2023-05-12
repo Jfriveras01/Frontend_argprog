@@ -1,0 +1,17 @@
+
+<div class="my-3 experience-container">
+    <h4>Educacion</h4>
+    <div class="my-3 experience grupo-info" *ngFor="let educacion of edu">
+        <app-educacion-form
+            (onSaveEducacion)="saveEducacion($event)"
+            (onDeleteEducacion)="removeEducacion($event)"
+            [edu]="educacion"
+        ></app-educacion-form>
+    </div>
+    <div *ngIf="onAddingED">
+        <h4>Nueva Educaciona</h4>
+        <app-educacion-form (onSaveEducacion)="addEducacion($event)"></app-educacion-form>
+    </div>
+    <button *ngIf="!onAddingED" type="button" (click)="toggleOnAddingED()" class="btn btn-primary btn-añadir">Añadir Experienca</button>
+    <button *ngIf="onAddingED" type="button" (click)="toggleOnAddingED()" class="btn btn-primary btn-cancelar-añadir">Deshacer</button>
+</div>

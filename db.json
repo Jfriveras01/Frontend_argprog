@@ -1,0 +1,147 @@
+{
+  "about-me": {
+    "foto_perfil": "../../../assets/perfil.jpg",
+    "nombre": "Juan Francisco Riveras",
+    "titulo": "Estudiante",
+    "ubicacion": "Entre Rios (Argentina)",
+    "descripcion": "¡Hola! Yo soy Francisco, me apasiona la tecnologia, los videojuegos y la astronomia. Mi objetivo es convertirme en un profesional como Desarrollador Web Full Stack Jr,  me gustaria ser parte de un equipo prefesional y proyectos que me permitan seguir creciendo como profesional. Actualmente me encuentro estudiando la carrera de Licenciatura en Sistemas en la Universidad Nacional de Entre Rios, y a la vez me encuentro cursando el Argentina programa para poder seguir sumando conocimiento en programacion\n             "
+  },
+  "redes": [
+    {
+      "id": 1,
+      "red": "Instagram",
+      "url": "https://www.instagram.com/franriveras01/",
+      "icon": "fa-brands fa-instagram fa-1x text-white"
+    },
+    {
+      "id": 2,
+      "red": "Github",
+      "url": "https://github.com/Jfriveras01",
+      "icon": "fa-brands fa-github fa-1x text-white"
+    },
+    {
+      "id": 3,
+      "red": "Linkedin",
+      "url": "https://www.linkedin.com/in/francisco-riveras-726866262/",
+      "icon": "fa-brands fa-linkedin fa-1x text-white"
+    }
+  ],
+  "Banner": {
+    "foto": "../../../assets/banner.jpg"
+  },
+  "Educacion": [
+    {
+      "id": 1,
+      "tipo": "Secundario",
+      "periodo": "2014-2019",
+      "nombre": "Escuela De Comercio Nro. 1 Prof. Gerardo Victorín",
+      "detalle": "Trayectoria con bachiller en Administración y Economía"
+    },
+    {
+      "id": 2,
+      "tipo": "Universidad",
+      "periodo": "2021-Actualidad",
+      "nombre": "Universidad Nacional de Entre Rios",
+      "detalle": "Actualmente cursando la carrera de Licenciatura en Sistemas"
+    },
+    {
+      "id": 3,
+      "tipo": "Se Programmar",
+      "periodo": "2022-2022",
+      "nombre": "Argentina Programa",
+      "detalle": "Curso realizado y aprobado"
+    },
+    {
+      "id": 4,
+      "tipo": "Yo Programo",
+      "periodo": "2022-Actualidad",
+      "nombre": "Argentina Programa",
+      "detalle": "Actualmente realizando el curso"
+    }
+  ],
+  "hard-skills": [
+    {
+      "id": 1,
+      "name": "HTML",
+      "percentage": "90"
+    },
+    {
+      "id": 2,
+      "name": "CSS",
+      "percentage": "83"
+    },
+    {
+      "id": 3,
+      "name": "Java",
+      "percentage": "63"
+    },
+    {
+      "id": 4,
+      "name": "BootStrap",
+      "percentage": "32"
+    }
+  ],
+  "soft-skills": [
+    {
+      "id": 1,
+      "name": "Trabajo en Equipo",
+      "percentage": "60"
+    },
+    {
+      "id": 2,
+      "name": "Comunicacion",
+      "percentage": "90"
+    },
+    {
+      "id": 3,
+      "name": "Proactivo",
+      "percentage": "88"
+    },
+    {
+      "id": 4,
+      "name": "Resolucion de problemas",
+      "percentage": "78"
+    },
+    {
+      "id": 5,
+      "name": "Flexibilidad",
+      "percentage": "97"
+    },
+    {
+      "id": 6,
+      "name": "Autooorganizacion",
+      "percentage": "58"
+    }
+  ],
+  "proyectos": [
+    {
+      "id": 1,
+      "url": "https://github.com/Jfriveras01/Angular-To-do-list",
+      "portada": "../../../assets/argentinaprograma4.0.jpg",
+      "titulo": "To do list ",
+      "descripcion": "lista de que hacer hecha con angular"
+    },
+    {
+      "id": 2,
+      "url": "",
+      "portada": "../../../assets/argentinaprograma4.0.jpg",
+      "titulo": "Calculadora",
+      "descripcion": ""
+    },
+    {
+      "id": 3,
+      "url": "",
+      "portada": "../../../assets/argentinaprograma4.0.jpg",
+      "titulo": "Argentina programa",
+      "descripcion": "Portafolio web hecho con angular"
+    }
+  ],
+  "experiencia": [
+    {
+      "id": 1,
+      "img": "../../../assets/uner-fcad-header.jpg",
+      "titulo": "Facultad",
+      "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui fuga cupiditate laudantium ullam sed libero nulla harum. Optio eligendi, necessitatibus explicabo nulla exercitationem aliquam ex et ratione, facilis, reprehenderit fugiat."
+    }
+  ]
+}

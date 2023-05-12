@@ -1,0 +1,17 @@
+<div class="my-3 proyectos-container">
+    <h4>Proyectos</h4>
+
+    <div class="my-3 proyecto-1 grupo-info" *ngFor="let proyecto of proyectos">
+        <app-proyectos-form
+            (onSaveProyecto)="saveProyecto($event)"
+            (onDeleteProyecto)="removeProyecto($event)"
+            [proyectos]="proyecto"
+        ></app-proyectos-form>
+    </div>
+    <div *ngIf="onAddingPR">
+        <h4>Nuevo Proyecto</h4>
+        <app-proyectos-form (onSaveProyecto)="addProyecto($event)"></app-proyectos-form>
+    </div>
+    <button *ngIf="!onAddingPR" type="button" (click)="toggleOnAddingPR()" class="btn btn-primary btn-añadir">Añadir Proyecto</button>
+    <button *ngIf="onAddingPR" type="button" (click)="toggleOnAddingPR()" class="btn btn-primary btn-cancelar-añadir">Deshacer</button>
+</div>

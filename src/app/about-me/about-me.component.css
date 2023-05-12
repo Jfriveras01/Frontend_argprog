@@ -1,0 +1,27 @@
+
+
+.about-me.grid{
+    margin-left: none;
+}
+
+.ft-perfil{
+    width: 70%;
+    size-adjust: 1;
+    margin-top: 25px;
+    margin-left: none;
+    background-color: #1f1f1f8a;
+    border-radius: 1;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+}
+
+.about-me-titulo{
+    font-size: 30px;
+    padding-left: 28%;
+}
+
+.about-me-texto{
+    font-size: 15px;
+    margin-top: 5%;
+}
+

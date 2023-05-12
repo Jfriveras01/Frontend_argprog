@@ -1,0 +1,10 @@
+.footer{
+    background-color: #000000;
+    
+}
+
+footer.fotdash{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

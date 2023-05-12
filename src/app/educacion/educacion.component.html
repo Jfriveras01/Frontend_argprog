@@ -1,0 +1,23 @@
+<section class="educacion">
+  <div class="container text-center educacion">
+      <h1 class="titulo-section pb-5">Educacion</h1>
+      <div class="row">
+        <div class="col-12">
+          <div class="educacion__grid-educaciones container-fluid">
+              <div class="row" *ngFor="let educacion of edu">
+                <div class=" col-6 text-left mt-3">
+                  <h4 class="educacion-titulo">{{educacion.tipo}}</h4>
+                  <h6 class="educacion-años">{{educacion.periodo}}</h6>
+                </div>
+                <div class="col-6 text-center mt-3">
+                  <h5>{{educacion.nombre}}</h5>
+                  <p class="educacion-texto">
+                    {{educacion.detalle}}
+                  </p>
+                </div>
+              </div>
+          </div>
+      </div>
+      </div>
+  </div>
+</section>

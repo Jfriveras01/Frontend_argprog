@@ -1,0 +1,20 @@
+.bg-black{
+    background-color: #000000;
+}
+
+.list-group-item{
+    background-color: transparent;
+}
+
+.fa-brands.fa-instagram.fa-1x:hover {
+    transform: scale(1.5);
+}
+.fa-brands.fa-github.fa-1x:hover {
+    transform: scale(1.5);
+}
+.fa-brands.fa-linkedin.fa-1x:hover {
+    transform: scale(1.5);
+}
+.fa-solid.fa-right-to-bracket.fa-1x:hover {
+    transform: scale(1.5);
+}

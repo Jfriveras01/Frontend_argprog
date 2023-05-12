@@ -1,0 +1,19 @@
+<form [formGroup]="aboutmeForm" (ngSubmit)="onSave()">
+    <div class="my-3">
+        <label for="ftPerfil" class="form-label">Foto de Perfil</label>
+        <input class="form-control" formControlName="ftPerfil" [ngClass]="{'noChanges' : ftPerfil?.hasError('required')}" type="text" id="ftPerfil" [placeholder]="aboutme.ft_perfil">
+    </div>
+    <div class="my-3">
+        <label for="tituloActual" class="form-label">Titulo</label>
+        <input type="text" formControlName="titulo" [ngClass]="{'noChanges' : titulo?.hasError('required')}" class="form-control" id="tituloActual" [placeholder]="aboutme.titulo">
+    </div>
+    <div class="my-3">
+        <label for="ubicacion" class="form-label">Ubicacion</label>
+        <input type="text" formControlName="ubicacion" [ngClass]="{'noChanges' : ubicacion?.hasError('required')}" class="form-control" id="ubicacion" [placeholder]="aboutme.ubicacion">
+    </div>
+    <div class="mt-3">
+        <label for="descripcion" class="form-label">Descripcion</label>
+        <textarea class="form-control" formControlName="descripcion" [ngClass]="{'noChanges' : descripcion?.hasError('required')}" id="descripcion" rows="3" [placeholder]="aboutme.descripcion"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary btn-guardar">Guardar</button>
+</form>

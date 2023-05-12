@@ -1,0 +1,17 @@
+<div class="my-3 experience-container">
+    <h4>Experiencias</h4>
+
+    <div class="my-3 experience grupo-info" *ngFor="let experiencia of exp">
+        <app-experiencia-form
+            (onSaveExperiencia)="saveExperiencia($event)"
+            (onDeleteExperiencia)="removeExperiencia($event)"
+            [exp]="experiencia"
+        ></app-experiencia-form>
+    </div>
+    <div *ngIf="onAddingEX">
+        <h4>Nueva Experienca</h4>
+        <app-experiencia-form (onSaveExperiencia)="addExperiencia($event)"></app-experiencia-form>
+    </div>
+    <button *ngIf="!onAddingEX" type="button" (click)="toggleOnAddingEX()" class="btn btn-primary btn-añadir">Añadir Experienca</button>
+    <button *ngIf="onAddingEX" type="button" (click)="toggleOnAddingEX()" class="btn btn-primary btn-cancelar-añadir">Deshacer</button>
+</div>

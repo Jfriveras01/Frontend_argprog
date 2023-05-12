@@ -1,0 +1,23 @@
+/*section educacion*/
+.titulo-section{
+    text-align: center;
+    font-size: x-large;
+}
+
+h6.edu{
+    font-size: small;
+    padding-top: 1%;
+}
+
+.racol{
+    padding-left: 1.3%;
+    margin-left: -4rem;
+}
+
+.dacol{
+    margin-left: 3rem;
+}
+
+.coledutit{
+    margin:auto;
+}
