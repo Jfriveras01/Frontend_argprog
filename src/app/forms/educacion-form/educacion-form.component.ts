@@ -13,7 +13,7 @@ export class EducacionFormComponent {
   @Output() onDeleteEducacion: EventEmitter<Educacion> = new EventEmitter();
 
   eduForm:FormGroup;
-    tipo:string = "";
+    titulo:string = "";
     periodo:string = "";
     nombre:string = "";
     detalle:string = "";
@@ -29,7 +29,7 @@ export class EducacionFormComponent {
 
   onSave(){
     if(this.edu){
-      this.edu.tipo = this.eduForm.value.tipo
+      this.edu.titulo = this.eduForm.value.tipo
       this.edu.periodo = this.eduForm.value.periodo
       this.edu.nombre = this.eduForm.value.nombre
       this.edu.detalle = this.eduForm.value.detalle
@@ -38,12 +38,12 @@ export class EducacionFormComponent {
       
       this.eduForm.reset()
     }else{
-      this.tipo= this.eduForm.value.tipo
+      this.titulo= this.eduForm.value.tipo
       this.periodo= this.eduForm.value.periodo
       this.nombre= this.eduForm.value.nombre
       this.detalle= this.eduForm.value.detalle
-      const{tipo,periodo,nombre,detalle} = this
-      const newEdu = {tipo,periodo,nombre,detalle}
+      const{titulo,periodo,nombre,detalle} = this
+      const newEdu = {titulo,periodo,nombre,detalle}
       this.onSaveEducacion.emit(newEdu)
       console.log(newEdu);
       this.eduForm.reset()

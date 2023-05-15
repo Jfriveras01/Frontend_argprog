@@ -2,8 +2,8 @@
 <div *ngIf="edu;else nuevo">
     <form [formGroup]="eduForm" (ngSubmit)="onSave()">
         <div class="my-3">
-            <label for="tipo-edu" class="form-label">Tipo de Educacion</label>
-            <input formControlName="tipo" class="form-control" type="text" id="tipo-edu" [placeholder]="edu.tipo">
+            <label for="tipo-edu" class="form-label">Titulo de Educacion</label>
+            <input formControlName="tipo" class="form-control" type="text" id="tipo-edu" [placeholder]="edu.titulo">
         </div>
         <div class="my-3">
             <label for="periodo-edu" class="form-label">Periodo de Educacion</label>

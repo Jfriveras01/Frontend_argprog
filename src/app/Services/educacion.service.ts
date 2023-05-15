@@ -13,26 +13,50 @@ const httpOptions = {
   providedIn: 'root'
 })
 export class EducacionService {
-  private apiUrl='http://localhost:4201/educacion'
+  private apiUrl = 'http://localhost:8080/edu/'
 
   constructor(private http:HttpClient) { }
 
   getEducacion():Observable<Educacion[]>{
-    return this.http.get<Educacion[]>(this.apiUrl)
+    return this.http.get<Educacion[]>(this.apiUrl + 'lista')
   }
 
   updateEducacion(edu: Educacion):Observable<Educacion>{
-    const url = `${this.apiUrl}/${edu.id}`
-    return this.http.put<Educacion>(url, edu, httpOptions)
+    const url = `${this.apiUrl}update/${edu.id}`
+    return this.http.put<Educacion>(url, edu)
   }
   
-
   addEducacion(edu: Educacion):Observable<Educacion>{
-    return this.http.post<Educacion>(this.apiUrl, edu, httpOptions)
+    return this.http.post<Educacion>(this.apiUrl + 'create', edu)
   }
 
   deleteEducacion(edu:Educacion): Observable<Educacion>{
-    const url = `${this.apiUrl}/${edu.id}`
+    const url = `${this.apiUrl}delete/${edu.id}`
     return this.http.delete<Educacion>(url)
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

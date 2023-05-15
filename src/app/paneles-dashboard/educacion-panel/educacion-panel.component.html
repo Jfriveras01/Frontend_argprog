@@ -9,7 +9,7 @@
         ></app-educacion-form>
     </div>
     <div *ngIf="onAddingED">
-        <h4>Nueva Educaciona</h4>
+        <h4>Nueva Educacion</h4>
         <app-educacion-form (onSaveEducacion)="addEducacion($event)"></app-educacion-form>
     </div>
     <button *ngIf="!onAddingED" type="button" (click)="toggleOnAddingED()" class="btn btn-primary btn-añadir">Añadir Experienca</button>

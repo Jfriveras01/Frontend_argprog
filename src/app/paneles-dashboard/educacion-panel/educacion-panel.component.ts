@@ -29,7 +29,7 @@ export class EducacionPanelComponent implements OnInit {
 
   saveEducacion(edu:Educacion){
     this.eduService.updateEducacion(edu).subscribe();
-    alert("Soft Skill Modificada")
+    alert("Educacion modificada")
   }
 
   addEducacion(edu:Educacion){
