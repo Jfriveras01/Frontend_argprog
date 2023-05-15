@@ -29,6 +29,7 @@ import { EducacionPanelComponent } from './paneles-dashboard/educacion-panel/edu
 import { ProyectosFormComponent } from './forms/proyectos-form/proyectos-form.component';
 import { ProyectosPanelComponent } from './paneles-dashboard/proyectos-panel/proyectos-panel.component';
 import { BannerPanelComponent } from './paneles-dashboard/banner-panel/banner-panel.component';
+import { interceptorProvider } from './Services/interceptor.service';
 
 @NgModule({
   declarations: [
@@ -65,7 +66,9 @@ import { BannerPanelComponent } from './paneles-dashboard/banner-panel/banner-pa
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [
+    interceptorProvider
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

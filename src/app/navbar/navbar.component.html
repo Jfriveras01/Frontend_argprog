@@ -5,15 +5,19 @@
             <img src="../../assets/Imagen de WhatsApp 2023-03-30 a las 01.07.25.jpg" alt="Logo argentina programa" class="w-50 bannerfot">
         </a>
         <ul class="list-group list-group-horizontal">
-          <li class="list-group-item" *ngFor="let redes of networks"> 
+          <li class="list-group-item redes" *ngFor="let redes of networks"> 
              <a href="{{redes.url}}" target="_blank" rel="noopener noreferrer">
                 <i [ngClass]="redes.icon" ></i>
             </a>
           </li>
-          <li class="list-group-item"> 
+          <li > 
             <!-- boton que envia al login-->
             <!-- boton de login -->
-           <a [routerLink]="'/login'"> <i class="fa-solid fa-right-to-bracket fa-1x text-white"></i> </a>
+           <!-- <a [routerLink]="'/login'"  (click)="login()" *ngIf="!isLogged"> <i class="fa-solid fa-right-to-bracket fa-1x text-white"></i> </a>
+           <a [routerLink]="'/login'"  (click)="onLogOut()" *ngIf="isLogged"> <i class="fa-solid fa-right-from-bracket"></i> </a> -->
+           <button type="button" class="btn text-white-50 " (click)="login()" *ngIf="!isLogged">Ingresar </button>
+           <button type="button" class="btn text-white-50" (click)="onLogOut()" *ngIf="isLogged">Cerrar sesion</button>
+
           </li>
         </ul>
         
