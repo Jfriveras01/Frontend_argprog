@@ -10,10 +10,10 @@
         <ul class="skills-list">
           <li *ngFor="let softskill of softskill">
             <div class="skill">
-              <div class="skill-name">{{softskill.name}}</div>
+              <div class="skill-name">{{softskill.nombre}}</div>
               <div class="skill-bar">
                 <!--usar active para dar animacion-->
-                <div class="skill-progress active" [style.width.%]="softskill.percentage"></div> 
+                <div class="skill-progress active" [style.width.%]="softskill.porcentaje"></div> 
               </div>
             </div>
           </li>
@@ -26,9 +26,9 @@
         <ul class="skills-list">
           <li *ngFor="let hardskill of hardskill">
             <div class="skill">
-              <div class="skill-name">{{hardskill.name}}</div>
+              <div class="skill-name">{{hardskill.nombre}}</div>
               <div class="skill-bar">
-                <div class="skill-progress active" [style.width.%]="hardskill.percentage"></div>
+                <div class="skill-progress active" [style.width.%]="hardskill.porcentaje"></div>
               </div>
             </div>
           </li>

@@ -1,6 +1,6 @@
 export interface Redes {
     id?:number;
-    red:string;
+    nombre:string;
     url:string;
     icon:string;
 

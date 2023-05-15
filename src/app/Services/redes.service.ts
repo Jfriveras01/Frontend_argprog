@@ -16,17 +16,17 @@ const httpOptions = {
 
 
 export class RedesService {
-  private apiUrl='http://localhost:4201/redes'
+  private apiUrl='http://localhost:8080/red/'
 
   constructor(private http:HttpClient) { }
 
   getRedes():Observable<Redes[]>{
-    return this.http.get<Redes[]>(this.apiUrl)
+    return this.http.get<Redes[]>(this.apiUrl + 'lista')
   }
 
   updateRedes(red: Redes):Observable<Redes>{
-    const url = `${this.apiUrl}/${red.id}` 
-    return this.http.put<Redes>(url, red, httpOptions)
+    const url = `${this.apiUrl}update/${red.id}` 
+    return this.http.put<Redes>(url, red)
 
   }
 

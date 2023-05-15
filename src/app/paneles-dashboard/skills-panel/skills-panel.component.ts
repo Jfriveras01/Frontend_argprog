@@ -59,12 +59,12 @@ export class SkillsPanelComponent implements OnInit{
     this.skillsService.deleteSoftSkill(softSkill).subscribe(()=>[
       this.softSkills = this.softSkills.filter( (s) => s.id !== softSkill.id)
     ])
-    alert(softSkill.name + ": Removida")
+    alert(softSkill.nombre + ": Removida")
   }
   removeHardSkill(hardSkill:Skills){
     this.skillsService.deleteHardSkill(hardSkill).subscribe(()=>[
       this.hardSkills= this.hardSkills.filter((e) => e.id !== hardSkill.id)
     ])
-    alert(hardSkill.name + ": Removida")
+    alert(hardSkill.nombre + ": Removida")
   }
 }

@@ -1,10 +1,7 @@
-<div *ngIf="redes ">
+<div *ngIf="redes">
     <form [formGroup]="redesForm" (ngSubmit)="onSave()">
-        <div class="my-3 col-6">
-            <label for="url" class="form-label">{{redes.red}}</label>
-            <input type="text" formControlName="url_s" class="form-control col-3" id="url" [placeholder]="redes.url">
-            
-        </div>
+        <label for="socialUrl" class="form-label">{{redes.nombre}}</label>
+        <input type="text" class="form-control" formControlName="socialUrl" id="socialUrl" [placeholder]="redes.url">
         <button type="submit" [disabled]="redesForm.invalid" class="btn btn-primary btn-guardar">Guardar</button>
     </form>
 </div>

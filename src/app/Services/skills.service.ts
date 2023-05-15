@@ -14,44 +14,44 @@ const httpOptions = {
   providedIn: 'root'
 })
 export class SkillsService {
-  private hardApiUrl='http://localhost:4201/hard-skills'
-  private softApiUrl='http://localhost:4201/soft-skills'
+  private hardApiUrl='http://localhost:8080/skillh/'
+  private softApiUrl='http://localhost:8080/skillso/'
 
   constructor(private http:HttpClient) { }
 
   getHardSkills():Observable<Skills[]>{
-    return this.http.get<Skills[]>(this.hardApiUrl)
+    return this.http.get<Skills[]>(this.hardApiUrl + 'lista')
   }
 
   getSoftSkills():Observable<Skills[]>{
-    return this.http.get<Skills[]>(this.softApiUrl)
+    return this.http.get<Skills[]>(this.softApiUrl + 'lista')
   }
 
   updateSoftSkill(skill: Skills):Observable<Skills>{
-    const url = `${this.softApiUrl}/${skill.id}`
-    return this.http.put<Skills>(url, skill, httpOptions)
+    const url = `${this.softApiUrl}update/${skill.id}`
+    return this.http.put<Skills>(url, skill)
   }
 
   updateHardSkill(skill: Skills):Observable<Skills>{
-    const url = `${this.hardApiUrl}/${skill.id}`
-    return this.http.put<Skills>(url, skill, httpOptions)
+    const url = `${this.hardApiUrl}update/${skill.id}`
+    return this.http.put<Skills>(url, skill)
   }
 
   addSoftSkill(skill: Skills):Observable<Skills>{
-    return this.http.post<Skills>(this.softApiUrl, skill, httpOptions)
+    return this.http.post<Skills>(this.softApiUrl + 'create', skill)
   }
 
   addHardSkill(skill: Skills):Observable<Skills>{
-    return this.http.post<Skills>(this.hardApiUrl, skill, httpOptions)
+    return this.http.post<Skills>(this.hardApiUrl + 'create', skill)
   }
   
   deleteSoftSkill(skill:Skills): Observable<Skills>{
-    const url = `${this.softApiUrl}/${skill.id}`
+    const url = `${this.softApiUrl}delete/${skill.id}`
     return this.http.delete<Skills>(url)
   }
 
   deleteHardSkill(skill:Skills): Observable<Skills>{
-    const url = `${this.hardApiUrl}/${skill.id}`
+    const url = `${this.hardApiUrl}delete/${skill.id}`
     return this.http.delete<Skills>(url)
   }
 }
