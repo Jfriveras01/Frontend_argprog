@@ -13,25 +13,25 @@ const httpOptions = {
   providedIn: 'root'
 })
 export class ExperienciaService {
-  private apiUrl='http://localhost:4201/experiencia'
+  private apiUrl = 'http://localhost:8080/exp/'
+
   constructor(private http:HttpClient) { }
 
-  getExperiencias():Observable<Experiencia[]>{
-    return this.http.get<Experiencia[]>(this.apiUrl)
+  getExperiencia():Observable<Experiencia[]>{
+    return this.http.get<Experiencia[]>(this.apiUrl + 'lista')
   }
 
-  updateExperiencia(exp: Experiencia):Observable<Experiencia>{
-    const url = `${this.apiUrl}/${exp.id}`
-    return this.http.put<Experiencia>(url, exp, httpOptions)
-  }
-  
-
-  addExperiencia(exp: Experiencia):Observable<Experiencia>{
-    return this.http.post<Experiencia>(this.apiUrl, exp, httpOptions)
+  updateExperiencia(experience: Experiencia):Observable<Experiencia>{
+    const url = `${this.apiUrl}update/${experience.id}`
+    return this.http.put<Experiencia>(url, experience)
   }
 
-  deleteExperiencia(exp:Experiencia): Observable<Experiencia>{
-    const url = `${this.apiUrl}/${exp.id}`
+  addExperiencia(experience: Experiencia):Observable<Experiencia>{
+    return this.http.post<Experiencia>(this.apiUrl + 'create', experience)
+  }
+
+  deleteExperiencia(experience:Experiencia): Observable<Experiencia>{
+    const url = `${this.apiUrl}delete/${experience.id}`
     return this.http.delete<Experiencia>(url)
   }
 }

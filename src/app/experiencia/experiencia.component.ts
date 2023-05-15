@@ -14,7 +14,7 @@ export class ExperienciaComponent implements OnInit{
   constructor(private experienciaService:ExperienciaService) { }
 
   ngOnInit(): void {
-      this.experienciaService.getExperiencias().subscribe((experiencias)=>[
+      this.experienciaService.getExperiencia().subscribe((experiencias)=>[
         this.experiencias = experiencias
       ])
   
