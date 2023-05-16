@@ -11,13 +11,17 @@
             </a>
           </li>
           <li > 
-            <!-- boton que envia al login-->
-            <!-- boton de login -->
-           <!-- <a [routerLink]="'/login'"  (click)="login()" *ngIf="!isLogged"> <i class="fa-solid fa-right-to-bracket fa-1x text-white"></i> </a>
-           <a [routerLink]="'/login'"  (click)="onLogOut()" *ngIf="isLogged"> <i class="fa-solid fa-right-from-bracket"></i> </a> -->
+
+            
            <button type="button" class="btn text-white-50 " (click)="login()" *ngIf="!isLogged">Ingresar </button>
            <button type="button" class="btn text-white-50" (click)="onLogOut()" *ngIf="isLogged">Cerrar sesion</button>
 
+          </li>
+          <li>
+            <li *ngIf="isLogged" class="list-group-item bg-custom adminbot">
+              <a routerLink="/admin-dashboard">
+                  <img src="../../assets/icons8-edit-64_2.png" alt="panel" class="logo">
+              </a>
           </li>
         </ul>
         

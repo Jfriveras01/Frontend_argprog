@@ -6,6 +6,11 @@
     background-color: transparent;
 }
 
+.adminbot{
+    scale: 0.5;
+    padding: -5px;
+}
+
 .fa-brands.fa-instagram.fa-1x:hover {
     transform: scale(1.5);
 }

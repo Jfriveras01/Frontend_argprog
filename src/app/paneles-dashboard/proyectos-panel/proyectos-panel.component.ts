@@ -27,7 +27,7 @@ export class ProyectosPanelComponent {
 
   saveProyecto(proyectos:Proyecto){
     this.proyectoService.updateProyecto(proyectos).subscribe();
-    alert("Soft Skill Modificada")
+    alert("Proyecto Modificado")
   }
 
   addProyecto(proyectos:Proyecto){
