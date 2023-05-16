@@ -13,7 +13,7 @@ export class DashboardComponent implements OnInit{
 
   ngOnInit(): void {
       this.aboutMeService.getAboutMe().subscribe((aboutme)=>[
-        this.aboutme = aboutme
+        this.aboutme = aboutme[0]
       ])
   }
 }

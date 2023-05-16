@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { BannerService } from '../Services/banner.service';
+import { AboutMeService } from '../Services/aboutme.service';
 
 @Component({
   selector: 'app-banner',
@@ -7,14 +8,15 @@ import { BannerService } from '../Services/banner.service';
   styleUrls: ['./banner.component.css']
 })
 export class BannerComponent {
-  banner: any = {};
+  about_me: any = {};
 
-  constructor(private bannerService: BannerService) {  }
+  constructor(private aboutMeService: AboutMeService) {  }
 
   ngOnInit(): void {
-      this.bannerService.getBanner().subscribe((banner)=>[
-        this.banner = banner
-      ])
+    this.aboutMeService.getAboutMe().subscribe((about_me)=>[
+      this.about_me = about_me[0]
+    ])
   }
+  
 }
 

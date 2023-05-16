@@ -1,19 +1,27 @@
-<form [formGroup]="aboutmeForm" (ngSubmit)="onSave()">
+<form [formGroup]="aboutForm" (ngSubmit)="onSave()">
     <div class="my-3">
         <label for="ftPerfil" class="form-label">Foto de Perfil</label>
-        <input class="form-control" formControlName="ftPerfil" [ngClass]="{'noChanges' : ftPerfil?.hasError('required')}" type="text" id="ftPerfil" [placeholder]="aboutme.ft_perfil">
+        <input class="form-control" formControlName="ftPerfil" [ngClass]="{'noChanges' : ftPerfil?.hasError('required')}" type="text" id="ftPerfil" [placeholder]="about_me.foto">
+    </div>
+    <div class="my-3">
+        <label for="banner" class="form-label">Banner</label>
+        <input class="form-control" formControlName="banner" [ngClass]="{'noChanges' : banner?.hasError('required')}" type="text" id="ftPerfil" [placeholder]="about_me.banner">
+    </div>
+    <div class="my-3">
+        <label for="nombre" class="form-label">Nombre y Apellido</label>
+        <input class="form-control" formControlName="nombre" [ngClass]="{'noChanges' : nombre?.hasError('required')}" type="text" id="ftPerfil" [placeholder]="about_me.nombre">
     </div>
     <div class="my-3">
         <label for="tituloActual" class="form-label">Titulo</label>
-        <input type="text" formControlName="titulo" [ngClass]="{'noChanges' : titulo?.hasError('required')}" class="form-control" id="tituloActual" [placeholder]="aboutme.titulo">
+        <input type="text" formControlName="titulo" [ngClass]="{'noChanges' : titulo?.hasError('required')}" class="form-control" id="tituloActual" [placeholder]="about_me.titulo">
     </div>
     <div class="my-3">
         <label for="ubicacion" class="form-label">Ubicacion</label>
-        <input type="text" formControlName="ubicacion" [ngClass]="{'noChanges' : ubicacion?.hasError('required')}" class="form-control" id="ubicacion" [placeholder]="aboutme.ubicacion">
+        <input type="text" formControlName="ubicacion" [ngClass]="{'noChanges' : ubicacion?.hasError('required')}" class="form-control" id="ubicacion" [placeholder]="about_me.ubicacion">
     </div>
     <div class="mt-3">
         <label for="descripcion" class="form-label">Descripcion</label>
-        <textarea class="form-control" formControlName="descripcion" [ngClass]="{'noChanges' : descripcion?.hasError('required')}" id="descripcion" rows="3" [placeholder]="aboutme.descripcion"></textarea>
+        <textarea class="form-control" formControlName="descripcion" [ngClass]="{'noChanges' : descripcion?.hasError('required')}" id="descripcion" rows="3" [placeholder]="about_me.descripcion"></textarea>
     </div>
     <button type="submit" class="btn btn-primary btn-guardar">Guardar</button>
 </form>
