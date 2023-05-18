@@ -14,8 +14,8 @@ const httpOptions = {
   providedIn: 'root'
 })
 export class SkillsService {
-  private hardApiUrl='http://localhost:8080/skillh/'
-  private softApiUrl='http://localhost:8080/skillso/'
+  private hardApiUrl='https://bknfr.onrender.com/skillh/'
+  private softApiUrl='https://bknfr.onrender.com/skillso/'
 
   constructor(private http:HttpClient) { }
 

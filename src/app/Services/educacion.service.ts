@@ -13,7 +13,7 @@ const httpOptions = {
   providedIn: 'root'
 })
 export class EducacionService {
-  private apiUrl = 'http://localhost:8080/edu/'
+  private apiUrl = 'https://bknfr.onrender.com/edu/'
 
   constructor(private http:HttpClient) { }
 

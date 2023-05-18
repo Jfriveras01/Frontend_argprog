@@ -15,7 +15,7 @@ const httpOptions = {
 })
 export class AboutMeService {
 
-  private apiUrl = 'http://localhost:8080/aboutme/'
+  private apiUrl = 'https://bknfr.onrender.com/aboutme/'
 
   constructor(private http:HttpClient) { }
 

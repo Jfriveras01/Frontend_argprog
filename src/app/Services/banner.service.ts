@@ -14,7 +14,7 @@ const httpOptions = {
 })
 export class BannerService {
 
-  private apiUrl = 'http://localhost:4201/banner'
+  private apiUrl = 'https://bknfr.onrender.com/banner'
 
   constructor(private http:HttpClient) { }
 

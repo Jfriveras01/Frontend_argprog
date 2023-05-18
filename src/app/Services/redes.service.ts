@@ -16,7 +16,7 @@ const httpOptions = {
 
 
 export class RedesService {
-  private apiUrl='http://localhost:8080/red/'
+  private apiUrl='https://bknfr.onrender.com/red/'
 
   constructor(private http:HttpClient) { }
 

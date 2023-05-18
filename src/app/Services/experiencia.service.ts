@@ -13,7 +13,7 @@ const httpOptions = {
   providedIn: 'root'
 })
 export class ExperienciaService {
-  private apiUrl = 'http://localhost:8080/exp/'
+  private apiUrl = 'https://bknfr.onrender.com/exp/'
 
   constructor(private http:HttpClient) { }
 
